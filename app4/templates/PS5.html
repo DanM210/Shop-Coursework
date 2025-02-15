@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>{{ PS5.name }}</h1>
+    <p>Price: {{ £500.price }}</p>
+    <p>{{ The PS5 is the latest console from Sony.description }}</p>
+
+    <form action="{{ url_for('add_to_basket', techId=techId) }}" method="post">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+        <input type = "submit" value = "Add to Basket">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Web development technologies</h1>
+    <ul>
+        {% for tech in technologies %}
+            <li>{{ PS5.name }} - {{ £500.price }} - <img src="static/PS5.png" alt="PS5"> </li>
+            <a href="PS5.html"> PS5 Link </a>
+
+            <li>{{ Xbox.name }} - {{ £450.price }} - <img src="static/Xbox.png" alt="Xbox"> </li>
+            <a href="Xbox.html">Xbox Link</a>
+            
+            <li>{{ NintendoSwitch.name }} - {{ £300.price }} - <img src="static/Nintendo.png" alt="Nintendo"> </li>
+            <a href="Nintendo.html">NintendoSwitch Link</a>
+        {% endfor %}
+    </ul>
+</body>
+</html>
